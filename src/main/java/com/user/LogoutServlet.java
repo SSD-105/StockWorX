@@ -22,7 +22,7 @@ public class LogoutServlet extends HttpServlet {
 		
 		request.setAttribute("logout", true);
 		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/login.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/");
 		dispatcher.forward(request, response);
 	}
 
