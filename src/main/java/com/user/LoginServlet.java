@@ -29,7 +29,7 @@ public class LoginServlet extends HttpServlet {
 					System.out.println("Invalid Login");
 				    request.setAttribute("loginError", true);
 				    
-				    RequestDispatcher dispatcher = request.getRequestDispatcher("/login.jsp");
+				    RequestDispatcher dispatcher = request.getRequestDispatcher("/");
 				    dispatcher.forward(request, response);
 				    
 				//If credentials are valid
